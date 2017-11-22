@@ -85,7 +85,7 @@
 				<version>2.7</version>
 				<configuration>
 					<instrumentation>
-						<ignoreTrivial>false</ignoreTrivial>
+						<ignoreTrivial>true</ignoreTrivial>
 					</instrumentation>
 					<formats>
 						<format>html</format>
