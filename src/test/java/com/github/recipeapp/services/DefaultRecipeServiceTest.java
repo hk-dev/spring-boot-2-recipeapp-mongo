@@ -51,7 +51,7 @@ public class DefaultRecipeServiceTest {
     @Test
     public void getRecipeById() throws Exception {
         Recipe recipe = new Recipe();
-        recipe.setId(1L);
+        recipe.setId("1");
 
         when(recipeRepository.findById(anyLong())).thenReturn(Optional.of(recipe));
 

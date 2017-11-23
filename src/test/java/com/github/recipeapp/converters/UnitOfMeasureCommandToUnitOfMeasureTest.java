@@ -20,7 +20,7 @@ public class UnitOfMeasureCommandToUnitOfMeasureTest {
 
     @Test
     public void convert() throws Exception {
-        Long id = 1L;
+        String id = "1";
         String description = "description";
         command.setId(id);
         command.setDescription(description);

@@ -16,7 +16,7 @@ public class CategoryCommandTest {
 
     @Test
     public void testCategoryCommand() throws Exception {
-        Long id = 1L;
+        String id = "1";
         String description = "Category Command";
         command.setId(id);
         command.setDescription(description);

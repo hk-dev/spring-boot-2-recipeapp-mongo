@@ -20,7 +20,7 @@ public class NotesToNotesCommandTest {
 
     @Test
     public void convert() throws Exception {
-        Long id = 1L;
+        String id = "1";
         String recipeNotes = "recipeNotes";
         notes.setId(id);
         notes.setRecipeNotes(recipeNotes);

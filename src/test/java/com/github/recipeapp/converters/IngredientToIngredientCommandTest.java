@@ -23,11 +23,11 @@ public class IngredientToIngredientCommandTest {
 
     @Test
     public void convert() throws Exception {
-        Long id = 1L;
+        String id = "1";
         String description = "description";
         BigDecimal amount = new BigDecimal("10");
         UnitOfMeasure unitOfMeasure = new UnitOfMeasure();
-        Long unitOfMeasureId = 1L;
+        String unitOfMeasureId = "1";
         unitOfMeasure.setId(unitOfMeasureId);
 
         ingredient.setId(id);

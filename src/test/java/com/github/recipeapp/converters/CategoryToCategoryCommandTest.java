@@ -20,7 +20,7 @@ public class CategoryToCategoryCommandTest {
 
     @Test
     public void convert() throws Exception {
-        Long id = 1L;
+        String id = "1";
         String description = "description";
         category.setId(id);
         category.setDescription(description);

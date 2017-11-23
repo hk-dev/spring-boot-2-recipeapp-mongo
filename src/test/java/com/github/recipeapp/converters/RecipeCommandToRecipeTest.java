@@ -26,7 +26,7 @@ public class RecipeCommandToRecipeTest {
 
     @Test
     public void convert() throws Exception {
-        Long id = 1L;
+        String id = "1";
         Integer cookTime = Integer.valueOf("10");
         Integer prepTime = Integer.valueOf("10");
         String description = "description";
@@ -35,11 +35,11 @@ public class RecipeCommandToRecipeTest {
         Integer servings = Integer.valueOf("4");
         String source = "source";
         String url = "URL";
-        Long categoryIdOne = 1L;
-        Long categoryIdTwo = 2L;
-        Long ingredientIdOne = 1L;
-        Long ingredientIdTwo = 2L;
-        Long notesId = 1L;
+        String categoryIdOne = "1";
+        String categoryIdTwo = "2";
+        String ingredientIdOne = "1";
+        String ingredientIdTwo = "2";
+        String notesId = "1";
 
         command.setId(id);
         command.setCookTime(cookTime);
