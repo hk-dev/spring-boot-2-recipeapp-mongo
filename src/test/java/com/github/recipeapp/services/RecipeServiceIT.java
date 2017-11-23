@@ -4,6 +4,7 @@ import com.github.recipeapp.commands.RecipeCommand;
 import com.github.recipeapp.converters.RecipeToRecipeCommand;
 import com.github.recipeapp.models.Recipe;
 import com.github.recipeapp.repositories.RecipeRepository;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.Assert.assertEquals;
-@Ignore
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class RecipeServiceIT {

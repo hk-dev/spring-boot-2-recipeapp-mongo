@@ -53,18 +53,18 @@ public class DefaultRecipeServiceTest {
         Recipe recipe = new Recipe();
         recipe.setId("1");
 
-        when(recipeRepository.findById(anyLong())).thenReturn(Optional.of(recipe));
+        when(recipeRepository.findById(anyString())).thenReturn(Optional.of(recipe));
 
-        assertNotNull("Null recipe returned", recipeService.getRecipeById(1L));
+        assertNotNull("Null recipe returned", recipeService.getRecipeById("1"));
 
-        verify(recipeRepository, times(1)).findById(anyLong());
+        verify(recipeRepository, times(1)).findById(anyString());
         verify(recipeRepository, never()).findAll();
     }
 
     @Test
     public void deleteById() throws Exception {
-        Long id = 2L;
+        String id = "2";
         recipeService.deleteById(id);
-        verify(recipeRepository, times(1)).deleteById(anyLong());
+        verify(recipeRepository, times(1)).deleteById(anyString());
     }
 }
